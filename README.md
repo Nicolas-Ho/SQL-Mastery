@@ -36,5 +36,25 @@ WHERE medal IN ('Gold', 'Silver', 'Bronze')
 GROUP BY name, team
 ORDER BY rank
 
-4. france summer gold medal evolution
+4.CTE + window aggregate
 
+
+5. france summer gold medal evolution
+
+WITH cte AS (
+  SELECT
+  *,
+    lag(medal_count, 1) OVER (ORDER BY year) as previous_olympics_medal_count
+  FROM (
+    SELECT 
+      year,
+      count(medal) as medal_count
+    FROM constant-system-377818.Spotify.olympics
+    WHERE team = 'France' AND season = 'Summer' AND medal<>'NA'
+    GROUP BY team, year
+    ORDER BY year) medal_table
+  ORDER BY year )
+SELECT
+  *,
+  ROUND(((medal_count - previous_olympics_medal_count)/CAST(previous_olympics_medal_count AS NUMERIC))*100) as percentage_evolution
+FROM cte
