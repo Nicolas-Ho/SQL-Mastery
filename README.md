@@ -39,7 +39,7 @@ ORDER BY rank
 4.CTE + window aggregate
 
 
-5. france summer gold medal evolution
+5. france summer gold medal year by year % evolution
 
 WITH cte AS (
   SELECT
