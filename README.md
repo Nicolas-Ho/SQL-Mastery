@@ -2,7 +2,7 @@
 
 agg window function, ranking
 
-1.Heaviest athletes
+1.Sports with Heaviest athletes
 
 SELECT
   Sport,
@@ -13,7 +13,7 @@ GROUP BY Sport
 ORDER BY average_weight DESC
 LIMIT 10
 
-2.gold medal count
+2.Top 5 gold medal count
 
 SELECT
   team,
