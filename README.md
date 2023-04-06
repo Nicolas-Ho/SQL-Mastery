@@ -22,6 +22,9 @@ LIMIT 5
 
 **Query Result:** 
 
+**View**
+
+![Screenshot 2023-04-06 at 19 43 35](https://user-images.githubusercontent.com/73830924/230455679-db09f2d4-1055-4fa7-a0fb-92e1ebf5280a.png)
 
 
 
@@ -30,7 +33,7 @@ LIMIT 5
 ````sql
 SELECT
   Sport,
-  avg(CAST(weight AS float64)) as average_weight
+  ROUND(avg(CAST(weight AS float64)),1) as average_weight
 FROM constant-system-377818.Spotify.olympics
 WHERE weight <>'NA'
 GROUP BY Sport
