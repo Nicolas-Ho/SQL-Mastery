@@ -4,7 +4,7 @@ agg window function, ranking
 
 https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
 
-1.Sports with Heaviest athletes
+### 1.Sports with Heaviest athletes
 
 ````sql
 SELECT
@@ -17,7 +17,7 @@ ORDER BY average_weight DESC
 LIMIT 10
 ````
 
-2.Top 5 gold medal count
+### 2.Top 5 gold medal count
 
 ````sql
 SELECT
@@ -30,7 +30,7 @@ ORDER BY gold_medals_count DESC
 LIMIT 5
 ````
 
-3.rank athletes with the most medals and their info
+### 3.rank athletes with the most medals and their info
 
 ````sql
 SELECT 
@@ -44,10 +44,10 @@ GROUP BY name, team
 ORDER BY rank
 ````
 
-4.CASE WHEN
+### 4.CASE WHEN
 
 
-5. france summer gold medal year by year % evolution
+### 5. france summer gold medal year by year % evolution
 
 ````sql
 WITH cte AS (
