@@ -60,7 +60,8 @@ ORDER BY rank
 
 To rank the athletes the DENSE_RANK window function was used instead of a RANK() as to make the ranking clearer.
 
-<img width="161" alt="image" src="![Screenshot 2023-04-06 at 19 35 01](https://user-images.githubusercontent.com/73830924/230454230-229b3114-3575-444e-a6f7-d26ddf4e7441.png)">
+![Screenshot 2023-04-06 at 19 35 01](https://user-images.githubusercontent.com/73830924/230454593-ef0967e0-01fe-4a77-ba8e-1b45a81167b0.png)
+
 
 
 ### 4.CASE WHEN
