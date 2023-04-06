@@ -22,7 +22,6 @@ LIMIT 5
 
 **Query Result:** 
 
-<img width="161" alt="image" src=".png">
 
 
 
@@ -60,6 +59,9 @@ ORDER BY rank
 **Steps**
 
 To rank the athletes the DENSE_RANK window function was used instead of a RANK() as to make the ranking clearer.
+
+<img width="161" alt="image" src="![Screenshot 2023-04-06 at 19 35 01](https://user-images.githubusercontent.com/73830924/230454230-229b3114-3575-444e-a6f7-d26ddf4e7441.png)">
+
 
 ### 4.CASE WHEN
 
