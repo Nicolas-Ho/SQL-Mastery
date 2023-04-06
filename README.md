@@ -6,6 +6,7 @@ https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-a
 
 1.Sports with Heaviest athletes
 
+````sql
 SELECT
   Sport,
   avg(CAST(weight AS float64)) as average_weight
@@ -14,9 +15,11 @@ WHERE weight <>'NA'
 GROUP BY Sport
 ORDER BY average_weight DESC
 LIMIT 10
+````
 
 2.Top 5 gold medal count
 
+````sql
 SELECT
   team,
   count(Medal) as gold_medals_count
@@ -25,6 +28,7 @@ WHERE Medal = 'Gold'
 GROUP BY team
 ORDER BY gold_medals_count DESC
 LIMIT 5
+````
 
 3.rank athletes with the most medals and their info
 
@@ -45,6 +49,7 @@ ORDER BY rank
 
 5. france summer gold medal year by year % evolution
 
+````sql
 WITH cte AS (
   SELECT
   *,
@@ -62,3 +67,4 @@ SELECT
   *,
   ROUND(((medal_count - previous_olympics_medal_count)/CAST(previous_olympics_medal_count AS NUMERIC))*100) as percentage_evolution
 FROM cte
+````
