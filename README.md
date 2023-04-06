@@ -8,7 +8,7 @@ dataset link : https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-his
 
 ***
 
-### 1.Display the 5 countries with the most gold medals in both summer and winter Olympics.
+### Display the 5 countries with the most gold medals in both summer and winter Olympics.
 
 ````sql
 SELECT
@@ -29,7 +29,7 @@ LIMIT 5
 ***
 
 
-### 2.Display the 10 sports with the heaviest average weight of athletes.
+### Display the 10 sports with the heaviest average weight of athletes.
 
 ````sql
 SELECT
@@ -52,7 +52,7 @@ Here we needed to cast the weight variable as a float to compute the average. On
 
 ***
 
-### 3.Rank the athletes according to the numbers of medals they won.
+### Rank the athletes according to the numbers of medals they won.
 
 ````sql
 SELECT 
@@ -74,11 +74,7 @@ To rank the athletes the DENSE_RANK window function was used instead of a RANK()
 
 ***
 
-### 4.CASE WHEN
-
-***
-
-### 5. Show the percentage evolution of medals won by France in each of the Summer Olympics ordered by year.
+### Show the percentage evolution of medals won by France in each of the Summer Olympics ordered by year.
 
 ````sql
 WITH cte AS (
