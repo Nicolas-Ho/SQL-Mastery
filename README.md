@@ -39,7 +39,7 @@ ORDER BY average_weight DESC
 LIMIT 10
 ````
 
-**Steps*
+**Steps**
 
 Here we needed to cast the weight variable as a float to compute the average. On top of this we made sure not to include athletes with no weight recorded.
 
@@ -57,7 +57,7 @@ GROUP BY name, team
 ORDER BY rank
 ````
 
-**Steps*
+**Steps**
 
 To rank the athletes the DENSE_RANK window function was used instead of a RANK() as to make the ranking clearer.
 
@@ -86,7 +86,7 @@ SELECT
 FROM cte
 ````
 
-**Steps*
+**Steps**
 
 First I needed to create a view which would show the result of France and medals won for each of the summer olympics. This was done in the nested subquery. I then used the LAG window function to be able to compare side by side current and previous olympics edition by year. This is achieved in the CTE.
 Finally the CTE is used to calculate the percentage evolution.
