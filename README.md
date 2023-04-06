@@ -2,6 +2,8 @@
 
 agg window function, ranking
 
+https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
+
 1.Sports with Heaviest athletes
 
 SELECT
@@ -26,6 +28,7 @@ LIMIT 5
 
 3.rank athletes with the most medals and their info
 
+''''sql
 SELECT 
   name,
   team,
@@ -35,8 +38,9 @@ FROM constant-system-377818.Spotify.olympics
 WHERE medal IN ('Gold', 'Silver', 'Bronze')
 GROUP BY name, team
 ORDER BY rank
+''''
 
-4.CTE + window aggregate
+4.CASE WHEN
 
 
 5. france summer gold medal year by year % evolution
