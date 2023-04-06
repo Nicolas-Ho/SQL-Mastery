@@ -20,8 +20,6 @@ ORDER BY gold_medals_count DESC
 LIMIT 5
 ````
 
-**Query Result:** 
-
 **View**
 
 ![Screenshot 2023-04-06 at 19 43 35](https://user-images.githubusercontent.com/73830924/230455679-db09f2d4-1055-4fa7-a0fb-92e1ebf5280a.png)
@@ -44,6 +42,11 @@ LIMIT 10
 **Steps**
 
 Here we needed to cast the weight variable as a float to compute the average. On top of this we made sure not to include athletes with no weight recorded.
+
+**View**
+
+![Screenshot 2023-04-06 at 19 41 13](https://user-images.githubusercontent.com/73830924/230455960-64391158-3c11-495a-ab4f-2c1ba50dd9e9.png)
+`
 
 ### 3.Rank the athletes according to the numbers of medals they won
 
@@ -96,3 +99,10 @@ FROM cte
 
 First I needed to create a view which would show the result of France and medals won for each of the summer olympics. This was done in the nested subquery. I then used the LAG window function to be able to compare side by side current and previous olympics edition by year. This is achieved in the CTE.
 Finally the CTE is used to calculate the percentage evolution.
+
+**View**
+
+![Screenshot 2023-04-06 at 19 46 33](https://user-images.githubusercontent.com/73830924/230456317-3f4f29e5-a7fd-430a-9908-d84cf5129647.png)
+
+
+
