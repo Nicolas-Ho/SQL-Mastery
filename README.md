@@ -4,7 +4,10 @@ dataset link : https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-his
 
 ##The dataset : 120 years of Olympic history: athletes and results
 
-This dataset contains basic bio data on athletes and medal results from Athens 1896 to Rio 2016. I felt this was an appropriate support to showcase some of my abilities with SQL. To this purpose I uploaded the dataset on BigQuery and tried to answer these following questions.
+## This dataset contains basic bio data on athletes and medal results from Athens 1896 to Rio 2016. I felt this was an appropriate support to showcase some of my abilities with SQL. To this purpose I uploaded the dataset on BigQuery and tried to answer these following questions.
+
+
+
 
 
 ### 1.Display the 5 countries with the most gold medals in both summer and winter Olympics.
@@ -23,6 +26,8 @@ LIMIT 5
 **View**
 
 ![Screenshot 2023-04-06 at 19 43 35](https://user-images.githubusercontent.com/73830924/230455679-db09f2d4-1055-4fa7-a0fb-92e1ebf5280a.png)
+
+
 
 
 
@@ -46,9 +51,11 @@ Here we needed to cast the weight variable as a float to compute the average. On
 **View**
 
 ![Screenshot 2023-04-06 at 19 41 13](https://user-images.githubusercontent.com/73830924/230455960-64391158-3c11-495a-ab4f-2c1ba50dd9e9.png)
-`
 
-### 3.Rank the athletes according to the numbers of medals they won
+
+
+
+### 3.Rank the athletes according to the numbers of medals they won.
 
 ````sql
 SELECT 
@@ -67,6 +74,8 @@ ORDER BY rank
 To rank the athletes the DENSE_RANK window function was used instead of a RANK() as to make the ranking clearer.
 
 ![Screenshot 2023-04-06 at 19 35 01](https://user-images.githubusercontent.com/73830924/230454593-ef0967e0-01fe-4a77-ba8e-1b45a81167b0.png)
+
+
 
 
 
@@ -103,6 +112,3 @@ Finally the CTE is used to calculate the percentage evolution.
 **View**
 
 ![Screenshot 2023-04-06 at 19 46 33](https://user-images.githubusercontent.com/73830924/230456317-3f4f29e5-a7fd-430a-9908-d84cf5129647.png)
-
-
-
