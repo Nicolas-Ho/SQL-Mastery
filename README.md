@@ -4,7 +4,7 @@ dataset link : https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-his
 
 ##The dataset : 120 years of Olympic history: athletes and results
 
-This dataset contains basic bio data on athletes and medal results from Athens 1896 to Rio 2016. I felt this was an appropriate support to showcase some of my abilities with SQL. Here are a list of 5 questions I tried to answer.
+This dataset contains basic bio data on athletes and medal results from Athens 1896 to Rio 2016. I felt this was an appropriate support to showcase some of my abilities with SQL. To this purpose I uploaded the dataset on BigQuery and tried to answer these following questions.
 
 
 ### 1.Display the 5 countries with the most gold medals in both summer and winter Olympics.
